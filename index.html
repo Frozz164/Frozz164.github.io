@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="web.css" id='theme'>
     
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,6 +12,11 @@
 <body>
     
     <header>
+        
+        <div class="preloader">
+        <div class="preloader__image"></div>
+        </div>
+        <button id='swithMode'>Темная тема</button>
         
         <div class="obl-first-srceen">
             <div class="first-screen_menu">
@@ -31,7 +36,7 @@
                 
             <div class="obl-text">
                 <div class="first-main-div"> Дизайн и верстка</div>
-                <div class="text-main">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
+                <div class="text-main">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div><br>
                 <form action="https://web.telegram.org" target="_blank">
                     <button type="submit" class="button"><div class="button-text"> НАПИСАТЬ МНЕ</div></button>
                 </form>
@@ -168,7 +173,9 @@
                 
             </div>
             <form action="https://web.telegram.org" target="_blank" class="ggs">
-                <button type="submit" class="button"><div class="button-text"> ОТПРАВИТЬ</div></button>
+                <button type="submit" class="button">
+                    <div class="button-text"> ОТПРАВИТЬ</div>
+                </button>
             </form>
         </div>
     
@@ -195,7 +202,7 @@
 
         </div>
     </main>
-
+    <script src="index.js"></script>
     
 </body>
 </html>
